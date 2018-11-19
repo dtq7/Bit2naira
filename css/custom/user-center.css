@@ -1,0 +1,35 @@
+div#Details_Information ul{
+    list-style: none;
+}
+
+div#Details_Information ul li{
+    background-color: rgb(228, 93, 30);
+    padding : 10px 20px;
+    font-weight: 700;
+    opacity: 0.8;
+    margin: 5px 0px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+span#errorMessageFail{
+    color:red;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top:7px;
+    display: block;
+    text-align: left;
+}
+
+
+
+span#errorMessagePass{
+    color:green;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top:7px;
+    display: block;
+    text-align: left;
+}

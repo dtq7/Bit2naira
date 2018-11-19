@@ -1,0 +1,32 @@
+span.Register_Error{
+    color: red;
+    padding-left: 10px;
+}
+
+input.Error_Border{
+    border: 1px solid red;
+}
+
+input.Success_Border{
+    border: 1px solid green;
+}
+
+div.Login_Successful{
+    display: none;
+    background-color: rgb(10, 92, 10);
+    padding: 10px;
+    color: white;
+    opacity:0.8;
+    text-align: center;
+    font-weight: 300;
+}
+
+div.Login_Successful.show{
+    display: inline-block;
+    background-color: rgb(10, 92, 10);
+    padding: 10px;
+    color: white;
+    opacity:0.8;
+    text-align: center;
+    font-weight: 300;
+}

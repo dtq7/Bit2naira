@@ -1,0 +1,49 @@
+img.preloader{
+    width:50px;
+    display: none;
+    text-align: center;
+    margin: auto;
+    padding-top:10px;
+}
+
+
+
+span#errorMessage{
+    color:red;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top:7px;
+    display: block;
+    text-align: center;
+}
+
+
+img.preloader1{
+    width:50px;
+    display: none;
+    text-align: center;
+    margin: auto;
+    padding-top:10px;
+}
+
+
+
+span#errorMessageFail{
+    color:red;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top:7px;
+    display: block;
+    text-align: center;
+}
+
+
+
+span#errorMessagePass{
+    color:green;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top:7px;
+    display: block;
+    text-align: center;
+}

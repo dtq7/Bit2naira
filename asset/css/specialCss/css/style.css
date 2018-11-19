@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
+    color: #666;
+    background-color: #f7fafb;
+}
+
+
+
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    transition: all 500ms ease-in-out;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+.btn {
+    transition: all 300ms ease-in-out;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+}
+
+.btn:hover {}
+
+
+/* Validation styles*/
+
+test {
+    color: #3b9458;
+}
+
+.valid {
+    border: 1px solid green;
+}
+
+.error {
+    color: red;
+}
+
+section#showcase {
+    min-height: 500px;
+    background: url("../img/land3.jpeg") no-repeat 0 -40px;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+section#showcase div#showcaseContent {
+    margin-top: 150px;
+    color: grey;
+}
+
+section div#sectionInfo {
+    padding: 0px 30px;
+    margin-top: 0px
+}
+
+section#main {
+    padding-top: 70px;
+    margin-bottom: 20px;
+}
+
+section#main div#sectionInfo h6 {
+    font-size: 22px;
+    font-weight: 100 !important;
+    line-height: 1;
+    letter-spacing: -0.04em;
+}
+
+div#navbarCollapse ul li a:focus {
+    display: none;
+}
+
+
+/*NAVIGATION*/
+
+.navbar {}
+
+.navbar a:hover {
+    font-weight: 900;
+}
+
+
+/* SERVICES */
+
+.services {
+    padding: 40px 0 40px 0;
+    text-align: center;
+}
+
+.services h2,
+.services h4 {
+    color: #4c4c4c;
+    margin: 20px 0 20px 0;
+}
+
+.services p {
+    color: #737373;
+    font-size: 14px;
+    padding-bottom: 40px;
+}
+
+.services i {
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
+    padding: 25px 20px;
+    border-radius: 50%;
+    background-color: #6699cc;
+    color: #fff;
+}
+
+
+/* OFFER */
+
+.offer {
+    padding: 50px 0 80px 0;
+    text-align: center;
+    background: linear-gradient(to right, #3a7fd5, #6ebce2);
+    opacity: 0.6;
+}
+
+.offer h2 {
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.offer {
+    padding-bottom: 40px;
+}
+
+.offer .packages {
+    padding: 30px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 30px;
+    min-height: 400px;
+}
+
+.packages li {
+    display: block;
+    padding: 5px;
+}
+
+.packages h4 {
+    color: #4c4c4c;
+}
+
+.packages p,
+.packages li {
+    color: #737373;
+}
+
+.packages button {
+    margin-top: 10px;
+}
+
+
+/* TRUSTED  */
+
+.trust {
+    padding: 50px 0 80px;
+    text-align: center;
+}
+
+.trust p {
+    padding-bottom: 40px;
+}
+
+.trust img {
+    width: 200px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: all 500ms ease-in-out;
+}
+
+.trust li:hover img {
+    opacity: 1;
+}
+
+
+/* ADDITIONAL*/
+
+.additional {
+    padding: 50px 0 80px;
+    text-align: center;
+}
+
+.additional h4 {
+    font-size: 26px;
+}
+
+
+/* ABOUT */
+
+.about {
+    padding: 50px 0 80px;
+    text-align: center;
+}
+
+.about h4 {
+    font-size: 40px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    padding: 20px;
+    color: #fff;
+    background: linear-gradient(to right, #3a7fd5, #6ebce2);
+    opacity: 1;
+}
+
+.footer .social {
+    font-size: 25px 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 3px;
+    border-radius: 50%;
+    border: 1px solid #cccccc;
+    margin-top: 10px 5px;
+}
+
+.footer h5 {
+    font-size: 15px;
+    font-weight: 700;
+    border-bottom: 1px solid #fff;
+}
+
+.footer p {
+    font-size: 12px;
+    font-weight: 100;
+}
+
+button:hover#sub {
+    box-shadow: 0 14xp 18px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.17);
+}
+
+
+/* Information Section*/
+
+.infoSection {
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.infoSection h2 {
+    font-size: 32px;
+    color: #d86c6c;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* OTHER CUSTOM QUERIES*/
+
+.must {
+    text-align: center;
+    color: #6ebce2;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.must2 {
+    color: #d86c6c;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.must3 {
+    color: #d86c6c;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.i-right-arrow {
+    color: #d86c6c;
+}
+
+
+/*Media Query for tab size*/
+
+@media (max-width:768px) {
+    section#showcase {
+        min-height: 600px;
+        background: url("../img/land3.jpeg") no-repeat 0 -40px;
+        background-size: cover;
+        opacity: 0.9;
+    }
+    section#showcase div#showcaseContent {
+        margin-top: 120px;
+    }
+    section#main {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    section div#sectionInfo {
+        padding-top: 0px;
+        margin-top: 0;
+    }
+    section div#sectionForm {
+        width: 80%;
+        margin: auto;
+    }
+    /* SERVICES */
+    .services {
+        padding: 30px;
+    }
+    /* Arrow pointing to login*/
+    #xoxo {
+        display: none;
+    }
+
+    li.mineProgressModalInfo{
+        font-size: 3px;
+    }
+}
