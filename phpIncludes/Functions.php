@@ -1,7 +1,9 @@
 <?php
 
-$EMAIL_USER_NAME = "";
-$EMAIL_PASSWORD = "";  
+$SERVER_EMAIL_USER_NAME = "";
+$SERVER_EMAIL_PASSWORD = "";  
+$URL = "";
+$NOREPLY = "";
 
 function AccountNumberGenerator(){
     $toks = '567765991234567890';

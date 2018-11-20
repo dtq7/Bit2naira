@@ -27,7 +27,7 @@ if(isset($_SESSION['loggedIn'])){
 
 
 
-    $sqlLogin = $con->query("SELECT id,Username FROM Users WHERE Email='$email' AND Password='$password'"); 
+    $sqlLogin = $con->query("SELECT id,Username FROM Users WHERE Email='$email' AND Password='$password' AND isEmailConfirmed=1"); 
     $dataLogin = $sqlLogin->fetch_assoc();
 
     if($sqlLogin->num_rows > 0){

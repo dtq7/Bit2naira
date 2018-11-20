@@ -76,7 +76,7 @@
 
         <div class="row" id="Register_Form">
             <div class="col-six tab-full">
-                <div class="<?php echo $completionStyle?>">Your sign up was succesful. <a href="./index.php#login">Proceed</a> to login</div>
+                <div class="<?php echo $completionStyle?>">Your sign up was succesful. A confirmation mail has been sent to your e-mail address. Thank you!</div>
                 <h3><span style="color:green">Bit2Naira</span> | Join</h3>
                 <form method="post" action="register.php#Register_Form">
                     <div>

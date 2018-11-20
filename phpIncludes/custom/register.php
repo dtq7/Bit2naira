@@ -34,6 +34,7 @@ if(isset($_POST['submit'])){
     $Cpassword = $con->real_escape_string($_POST['Cpassword']);
     $Bit2nairaAccountNumber = AccountNumberGenerator();
     $Bit2nairaAccountBalance = 0;
+    $token = AccountNumberGenerator();
 
     $sqlUsername = $con->query("SELECT id FROM Users WHERE Username='$username'");
     if($sqlUsername->num_rows>0){
@@ -61,16 +62,38 @@ if(isset($_POST['submit'])){
 
 
     if($sqlUsername->num_rows == 0 && $sqlEmail->num_rows == 0 && $passwordMismatch == ""){
-        $register = $con->query("INSERT INTO Users(Username,Email,Password,Bit2naira_Account_Number,Bit2naira_Account_Balance) VALUES 
-        ('$username','$email','$password','$Bit2nairaAccountNumber','$Bit2nairaAccountBalance')");
+
+
+      include_once "./PHPMailer/Exception.php";
+      include_once "./PHPMailer/SMTP.php";
+      include_once "./PHPMailer/PHPMailer.php";
+ 
+      
+        $mail = new PHPMailer();
+        $mail->Username = $SERVER_EMAIL_USER_NAME;
+        $mail->Password = $SERVER_EMAIL_PASSWORD;
+        $mail->setFrom($SERVER_EMAIL_USER_NAME,'Bit2naira');
+        $mail->addReplyTo($NOREPLY);
+        $mail->addAddress($email);
+        $mail->isHTML(true);                       
+     
+       
+        $mail->Subject = 'Verify Bt2naira Account';
+        $mail->Body = "
+            Congratulations on your sign up! Click the link below to verify your account. Welcome to Bit2naira!:<br><br>
+        
+            <a href='$URL/confirmEmail.php?email=$email&token=$token'>Click here</a>
+        ";
+      if($mail->send()){ 
+        $register = $con->query("INSERT INTO Users(Username,Email,Password,Bit2naira_Account_Number,Bit2naira_Account_Balance,token) VALUES 
+        ('$username','$email','$password','$Bit2nairaAccountNumber','$Bit2nairaAccountBalance','$token')");
            
            if($register == true){
-             //Remove Username Validations
             $usernameBorder = "full-width";
             $usernameVal = "";
             $completionStyle = "Login_Successful full-width show";
 
-            //Remove email validation
+            
             $emailBorder = "full-width";
             $emailVal = "";
             echo("Inserted");
@@ -78,6 +101,8 @@ if(isset($_POST['submit'])){
             echo "Failed";
           }
     }
+
+  }
 
 }   
 
