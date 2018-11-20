@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 19, 2018 at 03:00 AM
+-- Generation Time: Nov 20, 2018 at 12:04 PM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.4
 
@@ -84,6 +84,8 @@ CREATE TABLE `Users` (
   `Username` varchar(255) DEFAULT NULL,
   `Email` varchar(255) NOT NULL,
   `Password` varchar(255) NOT NULL,
+  `isEmailConfirmed` tinyint(4) NOT NULL DEFAULT '0',
+  `token` varchar(255) NOT NULL,
   `Bitcoin_Wallet_Address` varchar(255) DEFAULT NULL,
   `Bank_Name` varchar(255) DEFAULT NULL,
   `Bank_Account_Name` varchar(255) DEFAULT NULL,
@@ -150,31 +152,31 @@ ALTER TABLE `WithdrawalRequest`
 -- AUTO_INCREMENT for table `BitcoinPurchaseOrder`
 --
 ALTER TABLE `BitcoinPurchaseOrder`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `BitcoinSalesOrder`
 --
 ALTER TABLE `BitcoinSalesOrder`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `GiftCardSaleOrder`
 --
 ALTER TABLE `GiftCardSaleOrder`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `Users`
 --
 ALTER TABLE `Users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `WithdrawalRequest`
 --
 ALTER TABLE `WithdrawalRequest`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
