@@ -9,10 +9,9 @@
         $eml = $con->real_escape_string($_GET['email']);
         $tok= $con->real_escape_string($_GET['token']);
 
-        $sql = $con->query("SELECT id FROM users WHERE Email='$eml' AND token='$tok' AND isEmailConfirmed=0");
-       // echo $sql->num_rows;
+        $sql = $con->query("SELECT id FROM Users WHERE Email='$eml' AND token='$tok' AND isEmailConfirmed=0");
         if($sql->num_rows > 0){
-            $con->query("UPDATE users SET isEmailConfirmed=1, token='' WHERE email='$eml'");
+            $con->query("UPDATE Users SET isEmailConfirmed=1, token='' WHERE Email='$eml'");
             header('Location: index.php');
             exit();
         }
