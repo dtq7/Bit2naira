@@ -1,0 +1,45 @@
+div.info_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0px;
+    box-shadow: 4px 4px 2px rgb(214, 200, 200);
+}
+
+div.info_section{
+    flex-basis: 8;
+}
+
+span.counter{
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 10px;
+    padding: 10px;
+    color: aliceblue;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+div.info_section ul li{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: cursive;
+}
+
+span.sep{
+    color: #b35b38;
+    margin-left: 5px;
+    font-weight: 900;
+}
+
+div.picture_section{
+    flex-basis: 4;
+}
+
+div.picture_section img{
+    width:300px;
+    height: 200px;
+    border-radius:8px;
+}

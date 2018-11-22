@@ -1,5 +1,8 @@
 <?php
 
+$ADMIN_PASSWORD = "12";
+
+
 $SERVER_EMAIL_USER_NAME = "";
 $SERVER_EMAIL_PASSWORD = "";  
 $URL = "";

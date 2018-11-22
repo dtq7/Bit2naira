@@ -1,0 +1,67 @@
+body{
+    background-color: #2d455c;
+    width: 60%;
+    margin:auto;
+    line-height: 1.5;
+}
+
+div#mainContainer{
+    background-color: #ffffff;
+    border: 2px solid #e7e7e7;
+    margin-top:10px;
+   
+}
+
+div#searchContainer{
+    background-color: #ffffff;
+    border: 2px solid #e7e7e7;
+    margin-top:10px;
+    padding: 5px;
+    min-height: 700px;
+}
+
+div.umbrella{
+    padding:5px;
+    border-top: 1px solid #e7e7e7;
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+}
+
+div.umbrella2{
+    padding:5px;
+    border-top: 1px solid #e7e7e7;
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+p.crit{
+    font-size: 13px;
+    font-weight: 500;
+    
+}
+
+img.pdfPIC{
+    height: 25px;
+    width:25px;
+}
+
+img.pdfPIC:hover{
+    height: 28px;
+    width:28px;
+    border:1px solid red;
+}
+
+td.tableText{
+    color:#093568;
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+td.tableText:hover{
+    font-size: 14px;
+}
+
+th i{
+    display: hidden;
+}
