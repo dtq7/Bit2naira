@@ -70,19 +70,16 @@ if(isset($_POST['submit'])){
       include_once "./PHPMailer/SMTP.php";
       include_once "./PHPMailer/PHPMailer.php";
  
-      
+     
         $mail = new PHPMailer();
         $mail->Username = $SERVER_EMAIL_USER_NAME;
         $mail->Password = $SERVER_EMAIL_PASSWORD;
         $mail->setFrom($SERVER_EMAIL_USER_NAME,'Bit2naira');
         $mail->addReplyTo($NOREPLY);
-        $mail->Username = $u;
-        $mail->Password = $p;
-        $mail->setFrom($u,'Bit2naira');
-        $mail->addReplyTo($u);
+        
         $mail->addAddress($email);
-        $mail->isHTML(true);                       
-     
+        $mail->isHTML(true);   
+
        
         $mail->Subject = 'Verify Bit2naira Account';
         $mail->Body = "
@@ -106,6 +103,7 @@ if(isset($_POST['submit'])){
           }else{
             echo "Failed";
           }
+    }else{
     }
 
   }
