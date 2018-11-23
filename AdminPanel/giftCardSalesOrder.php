@@ -64,8 +64,8 @@ if(isset($_POST['deny'])){
             $attachmentInfo<br><br>
             <img src='$src' />
         ";
-       //if($mail->send()){
-         if(true){
+       if($mail->send()){
+         //if(true){
           //Delete the record
             $sqlDelete = $con->query("DELETE FROM IssueLog WHERE Identity='$id'");
             $sqlDeny = $con->query("UPDATE GiftCardSaleOrder SET Addressed=1 WHERE id='$id'");
