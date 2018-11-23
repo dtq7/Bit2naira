@@ -1,4 +1,4 @@
 <?php
-     header('Location: ./AdminPane/');
+     header('Location: ./AdminPanel/');
      exit();
 ?>

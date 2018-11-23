@@ -39,7 +39,18 @@ div.picture_section{
 }
 
 div.picture_section img{
-    width:300px;
+    width:400px;
     height: 200px;
     border-radius:8px;
+}
+
+div.mt3{
+    margin-top:10px;
+    border-radius: 5px;
+    border: 1px thin black;
+    display: none;
+}
+
+textarea.TA{
+    border-radius: 7px;
 }

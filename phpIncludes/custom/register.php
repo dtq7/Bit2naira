@@ -2,6 +2,8 @@
 
 session_start();
 
+use PHPMailer\PHPMailer\PHPMailer;
+
 if(isset($_SESSION['loggedIn'])){
     header('Location: ./welcome.php');
     exit();
@@ -74,11 +76,15 @@ if(isset($_POST['submit'])){
         $mail->Password = $SERVER_EMAIL_PASSWORD;
         $mail->setFrom($SERVER_EMAIL_USER_NAME,'Bit2naira');
         $mail->addReplyTo($NOREPLY);
+        $mail->Username = $u;
+        $mail->Password = $p;
+        $mail->setFrom($u,'Bit2naira');
+        $mail->addReplyTo($u);
         $mail->addAddress($email);
         $mail->isHTML(true);                       
      
        
-        $mail->Subject = 'Verify Bt2naira Account';
+        $mail->Subject = 'Verify Bit2naira Account';
         $mail->Body = "
             Congratulations on your sign up! Click the link below to verify your account. Welcome to Bit2naira!:<br><br>
         
